@@ -1,3 +1,66 @@
-# About
+import { Callout, Steps } from 'nextra/components'
 
-This is the about page! This page is shown on the navbar.
+# Page Settings
+
+Prime offers following custom pages:
+
+- About us
+- Contact us
+- Tags/Category
+- Authors Page 
+- Individual Author page 
+- Disclaimer
+- Privacy Policy
+- Contribute/Write for us 
+
+*Please note: Codes for individual pages will be provided when you purchase the theme. This documentation covers basic settings, and not the whole code.*
+
+
+## Contact Forms
+
+We offer custom built forms for about, contact and contribute pages. However, you need to modify `action` value and `field` value separately for form to work. You can follow this simple guide that covers [how you can set custom contact forms with Google sheets](https://www.twistblogg.com/2022/09/fix-blogger-contact-form-not-sending.html).
+
+ 
+<Callout type="info" emoji="ℹ️">
+  Blogger default contact form is not working at the moment. We will update the code once it is fixed. Please use above mentioned method for now.
+</Callout>
+
+## Individual Author Pages 
+
+<Steps>
+
+### Setting Correct URL
+
+When you set individual author pages, it is important that you set correct url. If you go to any post, you will notice, there is a button that displays following message: **Explore more articles by AUTHOR_NAME**. 
+
+The `AUTHOR_NAME` is auto fetched using javascript and it creates a `href` of following format --
+
+```html
+www.example.com/p/author-your-name.html
+```
+
+Therefore, when you create a page in your blogger for each author, please write the title "**Author YOUR_NAME**". That way, a valid page address is generated. 
+
+Examples: `Author Twistblogg`, `Author Aman Bhattarai`, `Author Prime Theme` and so on...
+
+### Setting Correct Author name
+
+Author names are case sensitive. Therefore, an author with name `Aman Bhattarai` won't match with `Aman bhattarai`.
+
+<Callout type="warning" emoji="⚠️">
+  If your blog contains articles by author who deleted his/her blogger profile, set author name to `Unknown`.
+</Callout>
+
+### Limiting Number of Articles Displayed
+
+When you pass your `<script>`, use `max-results=no_of_articles`. By default, it displays first 25 articles.
+
+### Blogs with more than 200 articles
+
+We can call maximum 200 articles in a single script. If your blog contains more than 200 articles, you can set `start-index` to start after 200 articles.
+
+```html
+<script src='.....?start-index=200&max-results=200.....'></script>
+```
+
+</Steps>
