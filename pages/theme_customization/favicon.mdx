@@ -1,0 +1,31 @@
+# Changing Favicon 
+
+Go to [Favicon Generator](https://www.ionos.ca/tools/favicon-generator#tool) and upload your big favicon logo. The site will generate different version of icons.
+
+Upload all those images on blogger and place them in following code. 
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  You can create a blogger post and upload all your images there. You can get image address from there. Do not publish that post.
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+  Please place proper images to proper sizes.
+</Callout>
+
+```html showLineNumbers copy
+<link href='#' rel='apple-touch-icon' sizes='57x57'/>
+<link href='#' rel='apple-touch-icon' sizes='60x60'/>
+<link href='#' rel='apple-touch-icon' sizes='72x72'/>
+<link href='#' rel='apple-touch-icon' sizes='76x76'/>
+<link href='#' rel='apple-touch-icon' sizes='114x114'/>
+<link href='#' rel='apple-touch-icon' sizes='120x120'/>
+<link href='#' rel='apple-touch-icon' sizes='144x144'/>
+<link href='#' rel='apple-touch-icon' sizes='152x152'/>
+<link href='#' rel='apple-touch-icon' sizes='180x180'/>
+<link href='#' rel='icon' sizes='192x192' type='image/png'/>
+<link href='#' rel='icon' sizes='32x32' type='image/png'/>
+<link href='#' rel='icon' sizes='96x96' type='image/png'/>
+<link href='#' rel='icon' sizes='16x16' type='image/png'/>
+```

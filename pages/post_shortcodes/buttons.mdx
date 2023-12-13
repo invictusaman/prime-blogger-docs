@@ -1,0 +1,43 @@
+# Buttons
+
+You can create a button using `<button>` tag. We use `.global-button` to style our buttons.
+
+import { Steps } from 'nextra/components'
+ 
+<Steps>
+
+### Default Button
+```html filename="Default" copy 
+<button class="global-button">Default Button</button>
+```
+
+### Download Button 
+```html filename="Download" copy
+<a class="button1" href="#" rel="nofollow noopener noreferrer"> <i class="icon dl"> </i> Download File </a>
+```
+
+### Demo Button
+```html filename="Demo" copy
+<a class="button2" href="#" rel="nofollow noopener noreferrer"> <i class="icon demo"> </i> Live Demo </a>
+```
+
+### Two Buttons 
+```html filename="Two Buttons" copy
+<div class="button-container" style="text-align: left;">
+<a class="button2" href="#" rel="nofollow noopener noreferrer"> <i class="icon demo"> </i> Demo </a>
+<a class="button1" href="#" rel="nofollow noopener noreferrer"> <i class="icon dl"> </i> Download File </a>
+</div>
+```
+
+### Youtube Button 
+```html filename="Youtube" copy
+<a class="button2" href="#" rel="nofollow noopener noreferrer external" style="background: rgb(214, 0, 0); border: 1px solid rgb(214, 0, 0);" target="_blank">
+    <svg class="feather feather-youtube" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+    </svg> 
+Watch on Youtube
+</a>
+```
+
+</Steps>

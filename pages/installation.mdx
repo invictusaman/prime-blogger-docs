@@ -1,0 +1,76 @@
+import { Callout, Steps, FileTree } from 'nextra/components'
+
+# Installation
+
+Upon completing purchase, you will be provided with a **license key** and access to **theme folder**.
+
+## Theme Folder
+Theme folder includes following structure:
+ 
+<FileTree>
+  <FileTree.Folder name="Prime Blogger Theme" defaultOpen>
+    <FileTree.File name="theme.xml" />
+    <FileTree.File name="license.txt" />
+    <FileTree.File name="Blank_theme.xml" />
+    <FileTree.File name="Documentation.html" />
+    <FileTree.Folder name="Custom Pages">
+      <FileTree.File name="About.html" />
+      <FileTree.File name="Contact.html" />
+      <FileTree.File name="Tags.html" />
+      <FileTree.File name="Authors.html" />
+      <FileTree.File name="Individual Authors.html" />
+      <FileTree.File name="Privacy Policy.html" />
+      <FileTree.File name="Disclaimer.html" />
+      <FileTree.File name="Write for us.html" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+## Activating License
+
+Prime is encrypted with licensing system. You need to activate license in order to use theme else it will be redirected to our website.
+
+ 
+<Steps>
+### Getting License Key
+ 
+Upon purchase of our product, you will be given a uniquely generated license key. 
+ 
+### Contacting Admin
+ 
+As of now, we have not automated license validation system. So, you have to contact admin to validate your key. You can contact through telegram or whatsapp or email. More information is provided on license.txt file.
+</Steps>
+
+## Uploading Theme
+
+<Steps>
+### Blank Theme
+
+Go to Blogger Dashboard > Theme > Edit HTML and replace your existing theme with `Blank_theme.xml` code. Click Save.
+
+```xml filename="Blank_theme.xml" copy
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:js='false' b:defaultwidgetversion='2' b:layoutsVersion='3'>
+<b:attr name='xmlns' value=''/>
+<b:attr name='xmlns:b' value=''/>
+<b:attr name='xmlns:expr' value=''/>
+<b:attr name='xmlns:data' value=''/>
+<head>
+<title><data:blog.pageTitle/></title>
+<b:skin/>
+</head>
+<body>
+<b:section id='1'/>
+</body>
+</html>
+```
+
+### Main Theme
+
+Now, you have uploaded and registered `Blank_theme.xml`, it is time to upload your `theme.xml`. Either copy and paste the whole code or click on "Restore" > Upload `theme.xml`.
+</Steps>
+ 
+<Callout type="warning" emoji="⚠️">
+  It is important to register license key before setting up your theme.
+</Callout>

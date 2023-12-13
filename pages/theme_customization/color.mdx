@@ -1,0 +1,76 @@
+# Change Theme Colors
+
+We have some predefined theme background colors and text colors. You can change them from here:
+
+```css copy
+:root,:root[data-force-color-mode="light"]{
+color-scheme: light dark;
+--bodyB: $(body.bgColor) ;
+--bodyC: $(body.color) ;
+--headfootB: $(headfoot.bgColor);
+--headfootC: $(headfoot.color) ;
+--headerB: $(header.bgColor);
+--headerC: $(header.color);
+--accent-color: $(accent.color);
+--linkColor: $(links.color);
+--searchC: $(search.color);
+--searchB: $(search.bgColor);
+--searchHoverB: $(searchhover.bgColor);
+--border-one: #d9d9d8;
+--shade-one:#e8e8e6;
+--shade-one-hover:#d9d9d8;
+--shade-two:#F7F7F5;
+--accent-button-color:#f7f7f7;
+--color1: #EFE5F9;
+--color2: #FACCDD;
+--color3: #C4FAE5;
+--color4: #F8D3D4;
+--color5: #D8D2DA;
+--color6: #D5C6E9;
+--color7: #C7D3E4;
+--color8: #E2ADEB;
+--color9: #EEEAE8;
+--color10: #CBC9DF;
+--colorCommentBox: rgba(155,155,155,0.2);
+}
+```
+
+## Understanding each root elements 
+
+import { Steps } from 'nextra/components'
+
+<Steps>
+### Body Bg & Color
+
+You can set body background color by changing `--bodyB` and text color by changing `--bodyC`.
+
+### Header Bg & Color 
+
+You can set header background color by changing `--headerB` and text color by changing `--headerC`.
+
+### Hero Header and Footer 
+
+You can set hero header and footer background color by changing `--headfootB` and text color by changing `--headfootC`.
+
+### Accent Color 
+
+You can set accent/primary background color by changing `--accent-color` and text color by changing `--accent-button-color`.
+
+### Link Color 
+
+You can set link text color by changing `--linkColor`.
+
+### Border Color 
+
+You can set border-color by changing `--border-one`.
+
+### Shadings
+
+Shading colors are used to make other elements visible on background. `--shade-one` is primary shading color and `--shade-two` is set for future usage.
+
+### Other Colors 
+
+All colors from `--color1` to `--color10` are used to color **cloud label widget** and **author images on comments**. Similarly, `--colorCommentBox` is for comment box.
+</Steps>
+
+*All variables display same properties for dark mode.*

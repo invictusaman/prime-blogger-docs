@@ -1,15 +1,21 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "installation": "Installation",
+  "blog_settings": "Basic Settings",
+  "layout_settings": "Layout Settings",
+  "theme_customization": "Theme Customization",
+  "post_shortcodes":"Post Shortcodes",
+  "pages_settings":"Page Settings",
   "about": {
-    "title": "About",
-    "type": "page"
+    "title": "Purchase",
+    "type": "page",
+    "href": "https://www.twistblogg.com",
+    "newWindow": true
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Live Demo ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://prime.twistblogg.com",
     "newWindow": true
   }
 }

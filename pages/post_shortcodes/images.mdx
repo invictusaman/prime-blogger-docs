@@ -1,0 +1,48 @@
+# Images 
+
+Images are crucial part of web contents. Images can be loaded normally and they cover set width and height. However, you can make images full width and cover extra width.
+
+## Big Images 
+
+They cover extra width compared to your post body and extend to left and right.
+
+```html filename="Big Image" copy
+<div class='big-image'>
+    <img src='' />
+</div>
+```
+
+## Full Images 
+
+They cover full body width.
+
+```html filename="Full Image" copy
+<div class='full-image'>
+    <img src='' />
+</div>
+```
+
+## Image Gallery 
+
+You can create a masonry image gallery with following code: 
+
+```html filename="Image Gallery" copy
+<div class="tbMasonry">
+<!-- [Image 1] -->    
+  <div class="tbItem zmImg">
+    <img alt="Image1" data-src="img1.jpg" title="Image1" class="lazy">
+  </div>
+<!-- [ Image 2] -->    
+  <div class="tbItem zmImg">
+    <img alt="Image2" data-src="img2.jpg" title="Image2" class="lazy">
+  </div>  
+<!-- [ Image 3] -->    
+  <div class="tbItem zmImg">
+    <img alt="Image3" data-src="img3.jpg" title="Image3" class="lazy">
+  </div>  
+<!-- [ Image 4] -->    
+  <div class="tbItem zmImg">
+    <img alt="Image4" data-src="img4.jpg" title="Image4" class="lazy">
+  </div>  
+</div>
+```

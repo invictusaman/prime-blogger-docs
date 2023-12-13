@@ -1,0 +1,134 @@
+import { Callout, Steps } from 'nextra/components'
+
+# Understanding Layout Section 
+
+Prime comes with a simple, well defined layout. You can enable/disable most of the blog features from layout.
+
+## License
+
+Add your license code on this section. You will be prompt with one upon purchase.
+ 
+<Callout type="warning" emoji="⚠️">
+  It is important to register the license key before setting it up.
+</Callout>
+
+## Notification Bar
+
+Display custom call to action buttons or important information to your theme. Default setting is `sticky`.
+
+## Header 
+
+Set your company image or text logo under Header Logo section. You can also set navigation menus. 
+
+<Callout type="info" emoji="ℹ️">
+  The dropdown menus cannot be controlled from layout. Please refer to Theme Customization.
+</Callout>
+
+## Hero Header 
+
+Easily change the text of hero header from layout. You can also setup **Popular Post Widget** from this section. *Please note, if you are highly concerned about pagespeed (though the page speed hits 90+ with popular post thumbnails), we recommend disabling 'Display Thumbnails'.*
+
+## Ads 
+
+Ads can be directly embedded into your theme from layout. Look for **highlighted Ads Options** and insert your code there. We offer 7 ads location from Layout.
+
+<Callout emoji="💡">
+  You can get more ads location inside your theme. Please refer to Theme Customization.
+</Callout>
+
+## Featured Section 
+
+<Steps>
+### Label Gadget
+
+```txt filename="Label Gadget"
+Label Sorting: Alphabetically/By Frequency
+Display: Cloud
+Show number of posts per label: True
+Show: Selected Labels (We recommend 6 labels)
+```
+
+### Meet our Authors 
+
+```html filename="Meet Our Author" copy
+<!-- Author 1-->
+<div class="kkkdp siwum">
+  <a href="/p/author-xxxx.html" title="Author_name">
+    <img class="lazy" data-src="your_img.webp" alt="Author_name" />
+  </a>
+</div>
+<!-- Author 2-->
+<div class="kkkdp siwum">
+  <a href="/p/author-xxxx.html" title="Author_name">
+    <img class="lazy" data-src="your_img.webp" alt="Author_name" />
+  </a>
+</div>
+```
+
+### Featured Post
+
+Display Featured post at the top of latest articles. We recommend disabling `Show Text Snippets` for clean design.
+
+</Steps>
+
+## Blog Posts 
+
+Enable following options from Blog Posts tab:
+
+1. Show author
+2. Show comment count
+3. Show labels 
+4. Show Share buttons
+
+Disable other remaining options.
+
+## Recommendation
+
+This widget recommends articles based on specific label. 
+
+```html filename="Blog Special" /YOUR_LABEL_NAME/ copy
+<!-- Change `YOUR_LABEL_NAME` with your label name -->
+<!-- It is important to select a label that has at least 4 published contents -->
+<script type="more-lazyscript" src="/feeds/posts/summary/-/YOUR_LABEL_NAME?published&amp;alt=json-in-script&amp;callback=labelthumbs" ></script>
+```
+
+## Footer 
+
+Customize footer menus, social links and about us section easily from layout. *Please note: You do not need to insert form action link for email subscription, it is auto configured using our addon.* 
+
+## Addons 
+
+<Steps>
+
+### Insert your email subscription link 
+
+Paste your email provider action link and **Subscribe** widget will be auto configured. 
+
+### Reading Progress bar 
+
+Display a beautiful reading progress bar at the top of page. 
+
+### PrismJS Syntax Highlighter 
+
+By default, we implement simple syntax highlighter, however, if you share a lot of codes enable this option for better configuration. We accept `CSS`, `HTML`, `JS` and `XML` highlights. 
+
+### Sticky Header 
+
+Enable this feature to make header sticky. Please note, **notification bar** does not stay sticky upon activating this option.
+
+### Cookies consent 
+
+Display a simple cookies consent bar.
+
+### Anti ad-blocker 
+
+Unlike other anti adblocker, we display a portion of our post body and show ad block detected message. 
+
+<Callout type="warning" emoji="⚠️">
+  You might notice a request to `adsbygoogle.js` after enabling this plugin and it is normal, since we injecting that code and testing if ad blocker blocks the request.
+</Callout>
+
+### Automatic TOC 
+
+Activate this to automatically add a table of contents to each posts with more than 2 heading tags.
+</Steps>

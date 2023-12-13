@@ -1,0 +1,10 @@
+# Click To Tweet 
+
+Add this code to your post editor and a **click to tweet** box will appear.
+
+```html filename="Click To Tweet" copy
+<div class="click-to-tweet"><a onclick="window.open(&quot;https://twitter.com/share?url=&quot; +
+  document.querySelector(&quot;link[rel='canonical']&quot;).href + &quot;&amp;text=&quot; + encodeURIComponent(this.innerText) + &quot; - by: @twistblogg &quot;, &quot;sharer&quot;, &quot; toolbar=0, status=0, width=626, height=436&quot;); return false;" rel="nofollow" title="Share to Twitter">
+  Creative Blogger Template Designs For Your Blog #blogthemes #templates #creativedesigns
+  </a></div>
+```

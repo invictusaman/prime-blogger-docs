@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path*",
+        "has": [
+          {
+            "type": "host",
+            "value": "docs-prime.twistblogg.com"
+          }
+        ],
+        "destination": "/docs/:path*"
+      }
+    ]
+  }

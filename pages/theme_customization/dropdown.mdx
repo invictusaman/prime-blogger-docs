@@ -1,0 +1,28 @@
+# Customizing Dropdown Menus 
+
+Navigation menus can be customized from Layout, however, dropdown menus need to be changed from EDIT HTML section.
+
+Search for following code in your theme to change dropdown menus. 
+
+```html filename="dropdown" copy 
+ <li class='fq0pg'>
+   <span>More
+     <b:include name='dropdown-icon' />
+   </span>
+   <ul>
+     <li>
+       <a href='/p/tags.html' itemprop='url'>
+         <span class='ego7e' itemprop='name'>Tags</span>
+       </a>
+     </li>
+     <li>
+       <a href='/p/authors.html' itemprop='url'>
+         <span class='ego7e' itemprop='name'>Authors</span>
+       </a>
+     </li>
+     <li>
+       <a href='https://www.buymeacoffee.com/twistblogg' rel='nofollow noopener' target='_blank'>Donate</a>
+     </li>
+   </ul>
+ </li>
+```

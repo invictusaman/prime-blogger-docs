@@ -1,0 +1,93 @@
+# Ads Position
+
+We already provide seven ads position directly from layout, however, we offer more positions so you can display your ads more dominantly.
+
+This piece of code handles the functionailty --
+
+```html copy
+<!--[ In-feed ad ]-->
+<b:includable id='post-adIn'>
+  <div class='wwqa5 pAdin'>
+    <!--<ins class='adsbygoogle'/><script>...</script>-->
+  </div>
+</b:includable>
+
+<!--[ Top article ad ]-->
+<b:includable id='post-adTop'>
+  <div class='x7wk4'>
+    <!--<ins class='adsbygoogle'/><script>...</script>-->
+  </div>
+</b:includable>
+
+<!--[ Bottom article ad ]-->
+<b:includable id='post-adBot'>
+  <div class='x7wk4'>
+    <!--<ins class='adsbygoogle'/><script>...</script>-->
+  </div>
+</b:includable>
+
+<!--[ Matched content Ad ]-->
+<b:includable id='post-relatedAd'>
+  <div class='relatedPosts'>
+    <!--<ins class='adsbygoogle'/><script>...</script>-->
+  </div>
+</b:includable>
+```
+
+## More Customization for In-feed Ads 
+
+In feeds ads are displayed on your homepage along with your posts. Look for this code and uncomment it to activate infeed ads.
+
+```html copy
+<b:loop index='i' values='data:posts' var='post'>
+  <!--[ Remove comment tag below to enable in-feed ad ]-->
+  <!--[ The value of 'i' indicates to display ads at that location ] -->
+  <!--<b:if cond='data:i == 3'>
+        <b:include name='post-adIn'/>
+      </b:if>
+      <b:if cond='data:i == 6'>
+        <b:include name='post-adIn'/>
+      </b:if>-->
+  <b:include data='post' name='postCommentsAndAd' />
+</b:loop>
+```
+
+## More Customization for Middle Post Ads 
+
+Middle Post Ads can be directly set from Blogger Layout. However, you need to activate scripts to position them to middle.
+
+Search for following codes and uncomment them.
+
+```html copy
+<!--[ Script to move widget to the middle of article ]  -->
+<script> /*<![CDATA[*/ function insertAfter(tbh, tgt) {
+    var prt = tgt.parentNode;
+    if (prt.lastChild == tgt) {
+        prt.appendChild(tbh);
+    } else {
+        prt.insertBefore(tbh, tgt.nextSibling);
+    }
+}
+var tgt = document.getElementById('postBody');
+var midAd01 = document.getElementById('HTML01');
+var showAd01 = tgt.getElementsByTagName('p');
+if (showAd01.length > 0) {
+    insertAfter(midAd01, showAd01[10]);
+}; /*]]>*/ </script>
+
+<!--[Script to move widget to the middle of article] -->
+<script> /*<![CDATA[*/ function insertAfter(tbh, tgt) {
+    var prt = tgt.parentNode;
+    if (prt.lastChild == tgt) {
+        prt.appendChild(tbh);
+    } else {
+        prt.insertBefore(tbh, tgt.nextSibling);
+    }
+}
+var tgt = document.getElementById('postBody');
+var midAd02 = document.getElementById('HTML02');
+var showAd02 = tgt.getElementsByTagName('p');
+if (showAd02.length > 0) {
+    insertAfter(midAd02, showAd02[20]);
+}; /*]]>*/ </script>
+```

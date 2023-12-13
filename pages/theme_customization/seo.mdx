@@ -1,0 +1,130 @@
+# SEO Settings on Theme 
+
+Look for following codes and replace them accordingly.
+
+```html copy
+<!-- Facebook -->
+<meta content='your_image.webp' property='og:image'/>
+
+<!-- Twitter -->
+<meta content='your_image.webp' name='twitter:image:src'/>
+
+ <!-- Meta Owner -->
+<meta content='Your Name' name='Author'/>
+<link href='https://www.facebook.com/xxxxx' rel='me'/>
+<link href='https://www.facebook.com/xxxxx' rel='author'/>
+<link href='https://www.facebook.com/xxxxx' rel='publisher'/>
+<meta content='xxxxx' property='fb:admins'/>
+<meta content='xxxxx' property='fb:pages'/>
+<meta content='xxxxx' property='fb:app_id'/>
+<meta content='https://www.facebook.com/xxxxx' property='article:author'/>
+<meta content='https://www.facebook.com/xxxxx' property='article:publisher'/>
+<meta content='Twitter_Handler' name='twitter:site'/>
+<meta content='Twitter_Handler' name='twitter:creator'/>
+  
+<!-- Owner Sife Verification -->
+<meta content='xxxxx' name='msvalidate.01'/>
+<meta content='xxxxx' name='yandex-verification'/>
+<meta content='xxxxx' name='alexaVerifyID'/>
+<meta content='xxxxx' name='p:domain_verify'/>
+<meta content='xxxxx' name='dmca-site-verification'/>
+<meta content='xxxxx' name='follow.it-verification-code'/>
+<meta content='Your_Site_Name' name='copyright'/>
+```
+
+Similarly, look for this code and replace `your_image.webp` with your image.
+
+```html /your_image.webp/ copy
+<b:includable id='postMetadataJSONImage'>
+                            &quot;image&quot;: {
+                            &quot;@type&quot;: &quot;ImageObject&quot;,
+                            &quot;url&quot;: &quot;<b:eval expr='(data:post.featuredImage ? resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;) : 
+                            &quot;your_image.webp&quot;).jsonEscaped'/>&quot;,
+                            &quot;height&quot;: <b:eval expr='data:post.featuredImage ? 630 : 348'/>,
+                            &quot;width&quot;: 1200
+                          },
+ </b:includable>
+<b:includable id='postMetadataJSONPublisher'>
+                          &quot;publisher&quot;: {
+                            &quot;@type&quot;: &quot;Organization&quot;,
+                            &quot;name&quot;: &quot;<data:blog.title.escaped/>&quot;,
+                            &quot;logo&quot;: {
+                              &quot;@type&quot;: &quot;ImageObject&quot;,
+                              &quot;url&quot;: &quot;your_image.webp&quot;,
+                              &quot;width&quot;: 200,
+                              &quot;height&quot;: 200
+                            }
+                          },
+                    </b:includable>
+```
+
+Final step: Make changes to following json scripts.
+
+```json5 copy
+<script type='application/ld+json'>
+{
+&quot;@context&quot;: &quot;http://schema.org/&quot;,
+&quot;@type&quot;: &quot;Person&quot;,
+&quot;name&quot;: &quot;YOUR_NAME&quot;,
+&quot;email&quot;: &quot;contact@your_website.com&quot;,
+&quot;url&quot;: &quot;https://www.twitter.com/xxxx&quot;,
+&quot;image&quot;: &quot;your_image.webp&quot;,
+&quot;birthPlace&quot;: &quot;xxxx&quot;,
+&quot;gender&quot;: &quot;xxxx&quot;,
+&quot;nationality&quot;: &quot;xxxx&quot;,
+&quot;jobTitle&quot;: &quot;Admin&quot;,
+&quot;worksFor&quot;: {
+  &quot;@type&quot;: &quot;Organization&quot;,
+  &quot;name&quot;: &quot;Your_Company_Name&quot;,
+  &quot;url&quot;: &quot;https://www.your-website.com&quot;
+}
+}     
+</script>
+
+
+<script type='application/ld+json'>
+{
+&quot;@context&quot;: &quot;https://schema.org&quot;,
+&quot;@type&quot;: &quot;Organization&quot;,
+&quot;name&quot;: &quot;Your_Company_Name&quot;,
+&quot;alternateName&quot;: &quot;Your_Company_Alternative_Name&quot;,
+&quot;description&quot;: &quot;Your_Company_Meta_Description&quot;,
+&quot;url&quot;: &quot;Your_Company_ADDRESS&quot;,
+&quot;logo&quot;: &quot;Your_Company_LOGO&quot;,
+&quot;image&quot;: &quot;Your_Company_IMAGE&quot;,
+&quot;foundingDate&quot;: &quot;Your_Company_Date&quot;,
+&quot;founders&quot;: [
+  {
+    &quot;@type&quot;: &quot;Person&quot;,
+    &quot;name&quot;: &quot;Your_Company_Admin_Name&quot;
+  }
+],
+&quot;contactPoint&quot;: {
+  &quot;@type&quot;: &quot;ContactPoint&quot;,
+  &quot;telephone&quot;: &quot;xxxx&quot;,
+  &quot;contactType&quot;: &quot;customer service&quot;,
+  &quot;areaServed&quot;: &quot;xxxx&quot;,
+  &quot;availableLanguage&quot;: [
+    &quot;en&quot;,
+    &quot;xxxx&quot;
+  ]
+},
+&quot;sameAs&quot;: [
+  &quot;https://www.twitter.com/xxxx&quot;,
+  &quot;https://www.facebook.com/xxxx&quot;,
+  &quot;https://www.pinterest.com/xxxx&quot;,
+  &quot;https://www.mix.com/xxxx&quot;,
+  &quot;https://www.instagram.com/xxxx&quot;,
+  &quot;https://www.linkedin.com/in/xxxx&quot;,
+  &quot;https://www.github.com/xxxx&quot;
+],
+&quot;address&quot;: {
+  &quot;@type&quot;: &quot;PostalAddress&quot;,
+  &quot;streetAddress&quot;: &quot;Your_Company_ADDRESS&quot;,
+  &quot;addressRegion&quot;: &quot;Your_Company_Name_Region&quot;,
+  &quot;postalCode&quot;: &quot;Your_Company_Postal_Code&quot;,
+  &quot;addressCountry&quot;: &quot;Your_Company_Location&quot;
+}
+}
+</script>
+```
