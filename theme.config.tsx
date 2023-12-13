@@ -80,9 +80,9 @@ const config: DocsThemeConfig = {
       </span>
     )
   },
-  //toc: {
-  //  backToTop: true,
-  //},
+  toc: {
+    backToTop: true,
+  },
   editLink: {
     text: (
       null
