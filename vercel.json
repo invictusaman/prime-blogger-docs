@@ -8,7 +8,7 @@
             "value": "docs-prime.twistblogg.com"
           }
         ],
-        "destination": "/docs/:path*"
+        "destination": "www.twistblogg.com/docs/:path*"
       }
     ]
   }
