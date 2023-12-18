@@ -45,7 +45,7 @@ const config: DocsThemeConfig = {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
         <meta name="twitter:site:domain" content="twistblogg" />
-        <meta name="twitter:url" content="https://www.twistblogg.com/docs/prime" />
+        <meta name="twitter:url" content="https://docs.twistblogg.com" />
         <meta
           name="og:title"
           content={title ? title + ' – Prime Theme Docs' : 'Prime Theme Docs'}

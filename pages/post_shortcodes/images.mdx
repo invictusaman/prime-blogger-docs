@@ -2,6 +2,12 @@
 
 Images are crucial part of web contents. Images can be loaded normally and they cover set width and height. However, you can make images full width and cover extra width.
 
+import { Callout } from 'nextra/components'
+
+<Callout type="warning" emoji="⚠️">
+  It is important to know the first image of your post is featured image and won't be displayed on post body.
+</Callout>
+
 ## Big Images 
 
 They cover extra width compared to your post body and extend to left and right.
@@ -24,25 +30,48 @@ They cover full body width.
 
 ## Image Gallery 
 
-You can create a masonry image gallery with following code: 
+You can create a beautiful, fully responsive and lightbox effect image gallery with following code: 
 
 ```html filename="Image Gallery" copy
-<div class="tbMasonry">
-<!-- [Image 1] -->    
-  <div class="tbItem zmImg">
-    <img alt="Image1" data-src="img1.jpg" title="Image1" class="lazy">
-  </div>
-<!-- [ Image 2] -->    
-  <div class="tbItem zmImg">
-    <img alt="Image2" data-src="img2.jpg" title="Image2" class="lazy">
-  </div>  
-<!-- [ Image 3] -->    
-  <div class="tbItem zmImg">
-    <img alt="Image3" data-src="img3.jpg" title="Image3" class="lazy">
-  </div>  
-<!-- [ Image 4] -->    
-  <div class="tbItem zmImg">
-    <img alt="Image4" data-src="img4.jpg" title="Image4" class="lazy">
-  </div>  
+<div class="tb-gallery">
+
+  <!-- [ Row#1 ] -->
+    <div class="tb-rows">
+      <!-- [ Row#1 - Image#1 ] -->
+      <div class="tb-image">
+        <img alt="" height="1300" src="" width="2500" />
+      </div>
+      <!-- [ Row#1 - Image#2 ] -->
+      <div class="tb-image">
+        <img alt="" height="600px" src="" width="1200px" />
+      </div>
+       <!-- [ Row#1 - More images ] -->
+    </div>   
+
+    <!-- [ Row#2 ] -->
+    <div class="tb-rows">
+      <!-- [ Row#2 - Image#1 ] -->
+      <div class="tb-image">
+        <img alt="" height="1300" src="" width="2500px" />
+      </div>
+      <!-- [ Row#2 - Image#2 ] -->
+      <div class="tb-image">
+        <img alt="" height="1300px" src="" width="2500px" />
+      </div>
+       <!-- [ Row#2 - More images ] -->
+    </div>   
+
+   <!-- [ More Rows ] -->
+
 </div>
 ```
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  Lightbox image gallery supports lazy loading too. You can add a class `lazy` and `data-src` attribute.
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+  It is a must to specify proper `width` and `height` values of `<img>` tag for our image gallery to function properly.
+</Callout>
