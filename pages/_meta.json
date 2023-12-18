@@ -6,7 +6,13 @@
   "theme_customization": "Theme Customization",
   "post_shortcodes":"Post Shortcodes",
   "pages_settings":"Page Settings",
-  "contact": {
+  "purchase": {
+    "title": "Purchase",
+    "type": "page",
+    "href": "https://www.twistblogg.com/2023/12/prime-premium-blogger-theme-download.html",
+    "newWindow": true
+  },
+  "live_demo": {
     "title": "Live Demo ↗",
     "type": "page",
     "href": "https://prime.twistblogg.com",
