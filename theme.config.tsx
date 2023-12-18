@@ -6,12 +6,11 @@ import { useRouter } from 'next/router'
 const config: DocsThemeConfig = {
   logo: <span>Prime Documentation</span>,
   chat: {
-    link: 'https://t.me/+w1V7-iinKFQ5Njkx',
+    link: 'https://www.twitter.com/twistblogg',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
-        <circle cx="256" cy="256" r="256" fill="#59aae7"/>
-        <path d="M256 0a258.53 258.53 0 0 0-33.391 2.167C348.216 18.53 445.217 125.933 445.217 256s-97.002 237.47-222.609 253.833C233.539 511.256 244.683 512 256 512c141.385 0 256-114.616 256-256S397.385 0 256 0z" fill="#3d9ae3"/><path d="M164.689 311.141L82.127 269.86c-2.263-1.132-2.285-4.353-.038-5.516L395.75 102.105c2.304-1.192 4.964.811 4.456 3.355l-54.004 270.017c-.385 1.927-2.446 3.011-4.253 2.237l-73.393-31.453c-.879-.377-1.884-.326-2.721.139l-94.839 52.688c-2.062 1.145-4.597-.345-4.597-2.705v-82.474a3.09 3.09 0 0 0-1.71-2.768z" fill="#fcfcfc"/><path d="M200.31 338.967l-.513-82.428c-.003-.528.27-1.018.72-1.293l133.899-81.798c1.518-.927 3.106 1.083 1.852 2.345l-101.9 102.624c-.112.114-.207.244-.278.387l-17.43 34.858-13.509 25.988c-.725 1.395-2.831.888-2.841-.683z" fill="#d8d7da"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" opacity="0.8">
+        <path d="M2.867 3l6.869 9.818L2.734 21h2.646l5.539-6.49L15.461 21h5.91l-7.197-10.303L20.744 3h-2.605l-5.143 6.01L8.799 3H2.867z">
+          </path></svg>
     )
   },
   docsRepositoryBase: 'https://github.com/tb-github-account/prime-blogger-theme-documentation',
